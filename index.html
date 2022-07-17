@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyper Custom Affiliates Demo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/scripts/affiliate-redirect.js"></script>
+</head>
+
+<body>
+  </div>
+  <section class="bg-black w-full h-screen flex flex-col justify-start lg:justify-center items-center">
+    <div class="w-full bg-amber-400 px-5 flex justify-center mb-10 lg:absolute lg:top-0">
+      <p class="md:max-w-[50%] text-center text-xl">
+        This site simulates Only Dev's <span class="font-bold">non-Hyper</span> website.
+        If you have a website/landing page <span class="italic">besides your Hyper Portal</span> that you'd
+        prefer refering people to
+        first (eg. to learn more about your
+        product)
+        and want to still use Hyper Affiliates, using scripts/affiliate-redirect.js and adding a "purchase" button that
+        calls the
+        <span class="font-bold">redirect()</span> function is a great way to start.<br><br>
+        Use the README to learn about how to restructure your Affiliate URLs to go through your landing page
+        first. This repository is a starting point, not necessarily a plug-and-play solution for every single
+        scenario.<br>
+      </p>
+    </div>
+    <div
+      class="bg-black rounded w-full max-w-[500px] min-h-[300px] border-sky-200 border-[1px] flex flex-col lg:flex-row">
+      <div class="w-full h-full flex flex-col justify-center items-center border-gray-500 border-r">
+        <h1 class="text-6xl md:text-5xl text-sky-200">Only Devs</h1>
+        <p class="text-gray-500 px-5 text-center mt-2">A community for developers, by developers.</p>
+      </div>
+      <div class="w-full h-full bg-black flex flex-col justify-center items-center bg-gray-900">
+        <button onclick="redirect()"
+          class="text-gray-700 bg-sky-200 p-2 rounded-lg hover:text-sky-200 lg:hover:bg-black lg:hover:border-sky-200 lg:hover:border-[1px]">Purchase
+          Now</button>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
