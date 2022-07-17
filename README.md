@@ -37,9 +37,9 @@ Regardless of how your website is coded, the steps to enabling affiliate data to
 ## How our example works
 In `index.html`, we've laid out a simple mock landing page for Only Devs, a business that uses Hyper.
 
-When you visit `demo url`, you'll see the option to purchase. If you click the button, you'll see an alert (done for demonstration purposes) saying that no Affiliate ID was found in the request query--this means that we are an 'organic', non-referred user. After dismissing, you'll be redirected to the Hyper-hosted purchase page.
+When you visit [custom-affiliates.demo.hyper.co](https://custom-affiliates.demo.hyper.co/), you'll see the option to purchase. If you click the button, you'll see an alert (done for demonstration purposes) saying that no Affiliate ID was found in the request query--this means that we are an 'organic', non-referred user. After dismissing, you'll be redirected to the Hyper-hosted purchase page.
 
-Alertnatively, if you visit `alt demo url`, you'll once again see the option to purchase. But, since we've provided an Affiliate ID in the request query, we can reconstruct the original affiliate link. If you click on the purchase button, you'll get an alert that shows the reconstructed affiliate link. After dismissing, you'll be redirected to the Hyper-hosted purchase page *with affiliate information carried over*.
+Alertnatively, if you visit [custom-affiliates.demo.hyper.co/?affiliate=kmIwRUYlrfxbVigQEImR4](https://custom-affiliates.demo.hyper.co?affiliate=kmIwRUYlrfxbVigQEImR4), you'll once again see the option to purchase. But, since we've provided an Affiliate ID in the request query, we can reconstruct the original affiliate link. If you click on the purchase button, you'll get an alert that shows the reconstructed affiliate link. After dismissing, you'll be redirected to the Hyper-hosted purchase page *with affiliate information carried over*.
 
 The starter Javascript can be found in `scripts/affiliate-redirect.js`.
 
